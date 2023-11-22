@@ -22,7 +22,7 @@ class Rectangle:
         Returns:
             float or int: return perimeter of the rectangle if the rectangle is valid, 0 otherwise
         """
-        pass
+        return 2*(self.a+self.b)
 
     def area(self) -> float:
         """
@@ -32,4 +32,7 @@ class Rectangle:
         Returns:
             float or int:  return area of the rectangle if the rectangle is valid, 0 otherwise 
         """
-        pass
+        return self.a*self.b
+a=Rectangle(a=1,b=2)
+print(a.perimeter())
+print(a.area())
