@@ -34,7 +34,7 @@ class Circle:
         Returns:
             float: return circumference of the circle if the circle is valid, 0 otherwise
         '''
-        pass
+        return 2*pi*self.radius
     
     def area(self) -> float:
         '''
@@ -44,4 +44,9 @@ class Circle:
         Returns:
             float: return area of the circle if the circle is valid, 0 otherwise
         '''
-        pass
+        return pi*self.radius**2
+r= Circle(2)
+print(r.is_valid())
+print(r.diameter())
+print(r.circumference())
+print(r.area())
